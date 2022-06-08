@@ -1,13 +1,40 @@
 import 'package:flutter/material.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 
-class AppBarProfileLeadingWidget extends StatelessWidget {
-  const AppBarProfileLeadingWidget({
+class AppBarHeaderWidget extends StatelessWidget {
+  const AppBarHeaderWidget({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 25.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          _profileButton(),
+          const Spacer(),
+          _trailing(),
+        ],
+      ),
+    );
+  }
+
+  Widget _trailing() {
+    return Padding(
+      padding: const EdgeInsets.only(top: 20.0, right: 5.0),
+      child: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.chat_outlined,
+            color: PicPayColors.PICPAY_WHITE_FONT,
+            size: 30.0,
+          )),
+    );
+  }
+
+  InkResponse _profileButton() {
     return InkResponse(
       onTap: () {},
       child: Padding(
@@ -32,26 +59,18 @@ class AppBarProfileLeadingWidget extends StatelessWidget {
   }
 
   Widget _usernameColumn() {
+    TextStyle textStyle = const TextStyle(
+      color: PicPayColors.PICPAY_WHITE_FONT,
+      fontSize: 16.0,
+    );
+
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
-        Text(
-          "Olá,",
-          style: TextStyle(
-            color: PicPayColors.PICPAY_WHITE_FONT,
-            fontSize: 16.0,
-            height: 1.5,
-          ),
-        ),
-        Text(
-          "@fluttershy",
-          style: TextStyle(
-            color: PicPayColors.PICPAY_WHITE_FONT,
-            fontWeight: FontWeight.w900,
-            fontSize: 16.0,
-          ),
-        ),
+      children: [
+        Text("Olá,", style: textStyle.copyWith(height: 1.5)),
+        Text("@fluttershy",
+            style: textStyle.copyWith(fontWeight: FontWeight.w900)),
       ],
     );
   }
