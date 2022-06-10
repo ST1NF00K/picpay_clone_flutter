@@ -9,7 +9,7 @@ class AppBarHeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 25.0),
+      padding: const EdgeInsets.only(top: 40.0, bottom: 5.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -22,8 +22,8 @@ class AppBarHeaderWidget extends StatelessWidget {
   }
 
   Widget _trailing() {
-    return Padding(
-      padding: const EdgeInsets.only(top: 20.0, right: 5.0),
+    return Container(
+      padding: const EdgeInsets.only(right: 5.0, bottom: 5.0),
       child: IconButton(
           onPressed: () {},
           icon: const Icon(
@@ -43,7 +43,11 @@ class AppBarHeaderWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            const CircleAvatar(),
+            const CircleAvatar(
+              backgroundImage: NetworkImage(
+                "https://secure.gravatar.com/avatar/c9459ebea7a219653b6d0d5997075b4d?s=256&d=mm&r=g",
+              ),
+            ),
             const SizedBox(width: 12.0),
             _usernameColumn(),
             const SizedBox(width: 5.0),
