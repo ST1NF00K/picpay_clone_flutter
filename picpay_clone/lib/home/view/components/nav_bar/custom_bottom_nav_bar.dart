@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:picpay_clone/home/view/components/nav_bar/custom_bottom_nav_bar_item.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
+import 'package:picpay_clone/shared/styles/text_styles.dart';
 
 class CustonBottomNavBar extends StatelessWidget {
   const CustonBottomNavBar({
@@ -27,74 +28,73 @@ class CustonBottomNavBar extends StatelessWidget {
 
   Widget _fabItem() {
     return Positioned(
-        bottom: 7.0,
-        child: Column(
-          children: [
-            FloatingActionButton(
-              onPressed: () {},
-              backgroundColor: PicPayColors.PICPAY_BUTTON_MEDIUM_GREEN,
-              child: const Icon(
-                CupertinoIcons.money_dollar,
-                color: PicPayColors.PICPAY_WHITE_FONT,
-                size: 35.0,
+      bottom: 7.0,
+      child: Column(
+        children: [
+          FloatingActionButton(
+            onPressed: () {},
+            backgroundColor: PicPayColors.PICPAY_BUTTON_MEDIUM_GREEN,
+            child: const Icon(
+              CupertinoIcons.money_dollar,
+              color: PicPayColors.PICPAY_WHITE_FONT,
+              size: 35.0,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 5.0),
+            child: Text(
+              'Pagar',
+              style: TextStyles.smallDefaultText.copyWith(
+                color: PicPayColors.PICPAY_GREY_FONT,
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.only(top: 5.0),
-              child: Text(
-                'Pagar',
-                style: TextStyle(
-                    color: Colors.grey,
-                    fontWeight: FontWeight.normal,
-                    fontSize: 11),
-              ),
-            ),
-          ],
-        ),
-      );
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _simpleItems() {
     return BottomAppBar(
-              shape: const CircularNotchedRectangle(),
-              color: PicPayColors.PICPAY_WHITE_FONT,
-              child: SizedBox(
-                height: 57.0,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: <Widget>[
-                    CustomBottomNavBarItem(
-                      icon: Icons.home,
-                      text: "Início",
-                      onTap: () {},
-                      isSelected: true,
-                    ),
-                    const SizedBox(
-                      width: 5.0,
-                    ),
-                    CustomBottomNavBarItem(
-                      icon: Icons.account_balance_wallet_outlined,
-                      text: "Carteira",
-                      onTap: () {},
-                      isSelected: false,
-                    ),
-                    const SizedBox(
-                      width: 60.0,
-                    ),
-                    CustomBottomNavBarItem(
-                      icon: CupertinoIcons.bell,
-                      text: "Notificações",
-                      onTap: () {},
-                      isSelected: false,
-                    ),
-                    CustomBottomNavBarItem(
-                      icon: Icons.shopping_bag_outlined,
-                      text: "Store",
-                      onTap: () {},
-                      isSelected: false,
-                    ),
-                  ],
-                ),
-              ));
+        shape: const CircularNotchedRectangle(),
+        color: PicPayColors.PICPAY_WHITE_FONT,
+        child: SizedBox(
+          height: 57.0,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              CustomBottomNavBarItem(
+                icon: Icons.home,
+                text: "Início",
+                onTap: () {},
+                isSelected: true,
+              ),
+              const SizedBox(
+                width: 5.0,
+              ),
+              CustomBottomNavBarItem(
+                icon: Icons.account_balance_wallet_outlined,
+                text: "Carteira",
+                onTap: () {},
+                isSelected: false,
+              ),
+              const SizedBox(
+                width: 60.0,
+              ),
+              CustomBottomNavBarItem(
+                icon: CupertinoIcons.bell,
+                text: "Notificações",
+                onTap: () {},
+                isSelected: false,
+              ),
+              CustomBottomNavBarItem(
+                icon: Icons.shopping_bag_outlined,
+                text: "Store",
+                onTap: () {},
+                isSelected: false,
+              ),
+            ],
+          ),
+        ));
   }
 }

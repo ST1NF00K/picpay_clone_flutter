@@ -9,4 +9,6 @@ static const PICPAY_BUTTON_MEDIUM_GREEN = Color.fromRGBO(31, 120, 88, 1);
 
 static const PICPAY_WHITE_FONT = Colors.white;
 
+static const PICPAY_GREY_FONT = Colors.grey;
+
 }

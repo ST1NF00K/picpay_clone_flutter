@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
+import 'package:picpay_clone/shared/styles/text_styles.dart';
 
 class CustomBottomNavBarItem extends StatelessWidget {
   final String text;
@@ -33,12 +33,11 @@ class CustomBottomNavBarItem extends StatelessWidget {
             ),
             Text(
               text,
-              style: TextStyle(
-                  color: isSelected
-                      ? PicPayColors.PICPAY_PRIMARY_GREEN
-                      : Colors.grey,
-                  fontWeight: FontWeight.normal,
-                  fontSize: 11),
+              style: TextStyles.smallDefaultText.copyWith(
+                color: isSelected
+                    ? PicPayColors.PICPAY_PRIMARY_GREEN
+                    : PicPayColors.PICPAY_GREY_FONT,
+              ),
             )
           ],
         ),

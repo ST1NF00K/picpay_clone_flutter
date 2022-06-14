@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
+import 'package:picpay_clone/shared/styles/text_styles.dart';
 
 class BalanceAndExtractAppBarWidget extends StatelessWidget {
   const BalanceAndExtractAppBarWidget({
@@ -9,70 +11,60 @@ class BalanceAndExtractAppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 18.0),
+      padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 18.w),
       child: Row(
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text("Saldo PicPay",
-                  style: TextStyle(
-                    color: PicPayColors.PICPAY_WHITE_FONT,
-                    fontSize: 17.0,
+              Text("Saldo PicPay",
+                  style: TextStyles.defaultText.copyWith(
+                    fontSize: 17.sp,
                   )),
               _balanceWidget()
             ],
           ),
           const Spacer(),
-          _extractButton()
+          _extractButton(context)
         ],
       ),
     );
   }
 
-  Widget _extractButton() {
+  Widget _extractButton(BuildContext context) {
     return FlatButton(
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12.0)),
-          height: 32.0,
-          color: PicPayColors.PICPAY_BUTTON_MEDIUM_GREEN,
-          onPressed: () {},
-          child: const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 37.0),
-            child: Text("Extrato",
-                style: TextStyle(
-                  color: PicPayColors.PICPAY_WHITE_FONT,
-                  fontSize: 16.0,
-                )),
-          ),
-        );
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+      height: 34.h,
+      minWidth: 145.w,
+      color: PicPayColors.PICPAY_BUTTON_MEDIUM_GREEN,
+      onPressed: () {},
+      child: Text(
+        "Extrato",
+        style: TextStyles.defaultText,
+      ),
+    );
   }
 
   Widget _balanceWidget() {
-    const textStyle = TextStyle(
-      color: PicPayColors.PICPAY_WHITE_FONT,
-      fontSize: 20.0,
-      fontWeight: FontWeight.w500,
-    );
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Text(
+        Text(
           "R\$  ",
-          style: textStyle,
+          style: TextStyles.bigSemiBoldText,
         ),
-        const Text(
+        Text(
           "2.300,85",
-          style: textStyle,
+          style: TextStyles.bigSemiBoldText,
         ),
         Padding(
           padding: const EdgeInsets.only(left: 8.0),
           child: InkResponse(
             onTap: () {},
-            child: const Icon(
+            child: Icon(
               Icons.remove_red_eye_outlined,
               color: PicPayColors.PICPAY_WHITE_FONT,
-              size: 27,
+              size: 27.sp,
             ),
           ),
         )

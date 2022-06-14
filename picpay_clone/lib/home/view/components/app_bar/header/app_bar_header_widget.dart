@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
+import 'package:picpay_clone/shared/styles/text_styles.dart';
 
 class AppBarHeaderWidget extends StatelessWidget {
   const AppBarHeaderWidget({
@@ -63,18 +64,12 @@ class AppBarHeaderWidget extends StatelessWidget {
   }
 
   Widget _usernameColumn() {
-    TextStyle textStyle = const TextStyle(
-      color: PicPayColors.PICPAY_WHITE_FONT,
-      fontSize: 16.0,
-    );
-
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Olá,", style: textStyle.copyWith(height: 1.5)),
-        Text("@fluttershy",
-            style: textStyle.copyWith(fontWeight: FontWeight.w900)),
+        Text("Olá,", style: TextStyles.defaultText.copyWith(height: 1.5)),
+        Text("@fluttershy", style: TextStyles.defaultTextExtraBold),
       ],
     );
   }
