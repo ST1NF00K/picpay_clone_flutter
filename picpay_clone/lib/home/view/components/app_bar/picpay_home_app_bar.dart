@@ -26,7 +26,7 @@ class PicPayHomeAppBar extends StatelessWidget implements PreferredSizeWidget {
             endIndent: 20.0,
           ),
           BalanceAndExtractAppBarWidget(),
-          AppBarHorizontalList()
+          AppBarHorizontalList(),
         ],
       ),
     );
