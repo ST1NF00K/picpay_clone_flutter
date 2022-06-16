@@ -36,7 +36,7 @@ class BottomNavBarMiddleButton extends StatelessWidget {
                 child: Text(
               "Pagar",
               style: TextStyles.smallDefaultText.copyWith(
-                color: PicPayColors.PICPAY_BOTTOM_NAV_BAR_ICON,
+                color: PicPayColors.PICPAY_GREY_FONT,
               ),
             )),
           ),
