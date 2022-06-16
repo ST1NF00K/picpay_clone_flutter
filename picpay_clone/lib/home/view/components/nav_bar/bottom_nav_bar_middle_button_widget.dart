@@ -15,7 +15,7 @@ class BottomNavBarMiddleButton extends StatelessWidget {
           offset: const Offset(0, -22),
           child: Container(
             alignment: Alignment.center,
-            height: 54,
+            height: 54.sp,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: PicPayColors.PICPAY_PAY_BUTTON,
