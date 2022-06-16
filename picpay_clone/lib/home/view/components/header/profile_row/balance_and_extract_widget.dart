@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 import 'package:picpay_clone/shared/styles/text_styles.dart';
 
-class BalanceAndExtractAppBarWidget extends StatelessWidget {
-  const BalanceAndExtractAppBarWidget({
+class BalanceAndExtractWidget extends StatelessWidget {
+  const BalanceAndExtractWidget({
     Key? key,
   }) : super(key: key);
 

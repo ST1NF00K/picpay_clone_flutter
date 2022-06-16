@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 import 'package:picpay_clone/shared/styles/text_styles.dart';
 
-class AppBarHeaderWidget extends StatelessWidget {
-  const AppBarHeaderWidget({
+class HomeProfileRowWidget extends StatelessWidget {
+  const HomeProfileRowWidget({
     Key? key,
   }) : super(key: key);
 

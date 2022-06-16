@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:picpay_clone/home/view/components/app_bar/cards/card_items.dart';
-import 'package:picpay_clone/home/view/components/app_bar/cards/green_app_bar_card.dart';
+import 'package:picpay_clone/home/view/components/header/cards/card_items.dart';
+import 'package:picpay_clone/home/view/components/header/cards/green_home_card_widget.dart';
 
-class AppBarHorizontalList extends StatefulWidget {
-  const AppBarHorizontalList({
+class HomeHeaderHorizontalListWidget extends StatefulWidget {
+  const HomeHeaderHorizontalListWidget({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<AppBarHorizontalList> createState() => _AppBarHorizontalListState();
+  State<HomeHeaderHorizontalListWidget> createState() => _HomeHeaderHorizontalListWidgetState();
 }
 
-class _AppBarHorizontalListState extends State<AppBarHorizontalList> {
+class _HomeHeaderHorizontalListWidgetState extends State<HomeHeaderHorizontalListWidget> {
   List<Map<String, dynamic>> items = [];
 
   @override
@@ -29,7 +29,7 @@ class _AppBarHorizontalListState extends State<AppBarHorizontalList> {
         padding: const EdgeInsets.only(left: 15, right: 15),
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
-          return GreenAppBarCard(
+          return GreenHomeCardWidget(
             title: items[index]["title"],
             icon: items[index]["icon"],
           );

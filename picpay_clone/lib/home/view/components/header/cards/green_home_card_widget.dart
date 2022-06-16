@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 import 'package:picpay_clone/shared/styles/text_styles.dart';
 
-class GreenAppBarCard extends StatelessWidget {
-  const GreenAppBarCard({
+class GreenHomeCardWidget extends StatelessWidget {
+  const GreenHomeCardWidget({
     Key? key,
     required this.title,
     required this.icon,
@@ -28,13 +28,15 @@ class GreenAppBarCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               icon,
-               SizedBox(
+              SizedBox(
                 height: 10.h,
               ),
-              Text(" $title",
-                  style: TextStyles.defaultTextBold.copyWith(
-                    fontSize: 14.sp,
-                  )),
+              Text(
+                " $title",
+                style: TextStyles.defaultTextBold.copyWith(
+                  fontSize: 14.sp,
+                ),
+              ),
             ],
           ),
         ),
