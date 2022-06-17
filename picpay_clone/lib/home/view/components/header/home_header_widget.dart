@@ -15,7 +15,7 @@ class HomeHeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(bottom: 12),
-      color: PicPayColors.PICPAY_PRIMARY_GREEN,
+      color: PicPayColors.picpayPrimaryGreen,
       child: Column(
         children: const [
           HomeProfileRowWidget(),

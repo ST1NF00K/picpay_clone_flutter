@@ -23,7 +23,7 @@ class _CustonBottomNavBarState extends State<CustonBottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-      color: PicPayColors.PICPAY_WHITE_FONT,
+      color: PicPayColors.picpayWhite,
       child: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: 56.h,

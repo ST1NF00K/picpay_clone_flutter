@@ -36,7 +36,7 @@ class BalanceAndExtractWidget extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
       height: 34.h,
       minWidth: 145.w,
-      color: PicPayColors.PICPAY_BUTTON_MEDIUM_GREEN,
+      color: PicPayColors.picpayButtonMediumGreen,
       onPressed: () {},
       child: Text(
         "Extrato",
@@ -63,7 +63,7 @@ class BalanceAndExtractWidget extends StatelessWidget {
             onTap: () {},
             child: Icon(
               Icons.remove_red_eye_outlined,
-              color: PicPayColors.PICPAY_WHITE_FONT,
+              color: PicPayColors.picpayWhite,
               size: 27.sp,
             ),
           ),

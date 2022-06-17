@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
             title: 'Flutter Demo',
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
-              primaryColor: PicPayColors.PICPAY_PRIMARY_GREEN,
-              cardColor: PicPayColors.PICPAY_CARD_DARK_GREEN,
+              primaryColor: PicPayColors.picpayPrimaryGreen,
+              cardColor: PicPayColors.picpayCardDarkGreen,
             ),
             home: const HomePage(),
           );

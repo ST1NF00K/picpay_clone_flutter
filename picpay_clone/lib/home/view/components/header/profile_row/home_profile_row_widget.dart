@@ -29,7 +29,7 @@ class HomeProfileRowWidget extends StatelessWidget {
           onPressed: () {},
           icon: const Icon(
             Icons.chat_outlined,
-            color: PicPayColors.PICPAY_WHITE_FONT,
+            color: PicPayColors.picpayWhite,
             size: 30.0,
           )),
     );
@@ -54,7 +54,7 @@ class HomeProfileRowWidget extends StatelessWidget {
             const SizedBox(width: 5.0),
             const Icon(
               Icons.arrow_forward_ios,
-              color: PicPayColors.PICPAY_WHITE_FONT,
+              color: PicPayColors.picpayWhite,
               size: 18.0,
             ),
           ],

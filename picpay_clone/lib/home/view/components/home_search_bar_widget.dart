@@ -17,7 +17,7 @@ class HomeSearchBarWidget extends StatelessWidget {
       width: 1.sw,
       height: 50.h,
       decoration: BoxDecoration(
-        color: PicPayColors.PICPAY_LIGHT_GREY,
+        color: PicPayColors.picpayLightGrey,
         borderRadius: BorderRadius.circular(15),
       ),
       child: Center(
@@ -26,7 +26,7 @@ class HomeSearchBarWidget extends StatelessWidget {
           decoration: InputDecoration(
             prefixIcon: Icon(
               CupertinoIcons.search,
-              color: PicPayColors.PICPAY_PRIMARY_GREEN,
+              color: PicPayColors.picpayPrimaryGreen,
               size: 30.sp,
             ),
             hintText: ' O que você quer encontrar?',

@@ -6,7 +6,7 @@ List<Map<String, dynamic>> cardItensList = [
       "title": "Pix",
       "icon": const Icon(
         Icons.pix_outlined,
-        color: PicPayColors.PICPAY_WHITE_FONT,
+        color: PicPayColors.picpayWhite,
         size: 30.0,
       ),
     },
@@ -14,7 +14,7 @@ List<Map<String, dynamic>> cardItensList = [
       "title": "QR\n Code",
       "icon": const Icon(
         Icons.qr_code,
-        color: PicPayColors.PICPAY_WHITE_FONT,
+        color: PicPayColors.picpayWhite,
         size: 30.0,
       ),
     },
@@ -22,7 +22,7 @@ List<Map<String, dynamic>> cardItensList = [
       "title": "Pagar\n boleto",
       "icon": const Icon(
         Icons.qr_code_2_rounded,
-        color: PicPayColors.PICPAY_WHITE_FONT,
+        color: PicPayColors.picpayWhite,
         size: 30.0,
       ),
     },
@@ -30,7 +30,7 @@ List<Map<String, dynamic>> cardItensList = [
       "title": "Pagar\n pessoas",
       "icon": const Icon(
         Icons.people,
-        color: PicPayColors.PICPAY_WHITE_FONT,
+        color: PicPayColors.picpayWhite,
         size: 30.0,
       ),
     },
@@ -38,7 +38,7 @@ List<Map<String, dynamic>> cardItensList = [
       "title": "Recarga\n de Celular",
       "icon": const Icon(
         Icons.phone_android_outlined,
-        color: PicPayColors.PICPAY_WHITE_FONT,
+        color: PicPayColors.picpayWhite,
         size: 30.0,
       ),
     },
@@ -46,7 +46,7 @@ List<Map<String, dynamic>> cardItensList = [
       "title": "Cartão\n transporte",
       "icon": const Icon(
         Icons.bus_alert,
-        color: PicPayColors.PICPAY_WHITE_FONT,
+        color: PicPayColors.picpayWhite,
         size: 30.0,
       ),
     },
@@ -54,7 +54,7 @@ List<Map<String, dynamic>> cardItensList = [
       "title": "Pagar\n locais",
       "icon": const Icon(
         Icons.calculate,
-        color: PicPayColors.PICPAY_WHITE_FONT,
+        color: PicPayColors.picpayWhite,
         size: 30.0,
       ),
     },
@@ -62,7 +62,7 @@ List<Map<String, dynamic>> cardItensList = [
       "title": "Cobrar\n pessoas",
       "icon": const Icon(
         Icons.chat_bubble_outline,
-        color: PicPayColors.PICPAY_WHITE_FONT,
+        color: PicPayColors.picpayWhite,
         size: 30.0,
       ),
     },

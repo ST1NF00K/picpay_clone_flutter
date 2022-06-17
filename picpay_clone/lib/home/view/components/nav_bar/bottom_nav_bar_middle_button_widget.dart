@@ -18,13 +18,13 @@ class BottomNavBarMiddleButton extends StatelessWidget {
             height: 54.sp,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: PicPayColors.PICPAY_PAY_BUTTON,
+              color: PicPayColors.picpayLightGreen,
               border: Border.all(color: Colors.black12, width: 0.1),
             ),
             child: Icon(
               CupertinoIcons.money_dollar,
               size: 35.sp,
-              color: PicPayColors.PICPAY_WHITE_FONT,
+              color: PicPayColors.picpayWhite,
             ),
           ),
         ),
@@ -36,7 +36,7 @@ class BottomNavBarMiddleButton extends StatelessWidget {
                 child: Text(
               "Pagar",
               style: TextStyles.smallDefaultText.copyWith(
-                color: PicPayColors.PICPAY_GREY_FONT,
+                color: PicPayColors.picpayGreyFont,
               ),
             )),
           ),

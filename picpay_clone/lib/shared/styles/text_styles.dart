@@ -4,7 +4,7 @@ import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 
 class TextStyles {
   static TextStyle get defaultText => TextStyle(
-        color: PicPayColors.PICPAY_WHITE_FONT,
+        color: PicPayColors.picpayWhite,
         fontSize: 16.sp,
       );
 
@@ -24,7 +24,7 @@ class TextStyles {
       );
 
   static TextStyle get hintTextStyle => const TextStyle(
-        color: PicPayColors.PICPAY_GREY_FONT,
+        color: PicPayColors.picpayGreyFont,
         fontSize: 18,
       );
 }

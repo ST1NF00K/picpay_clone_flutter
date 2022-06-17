@@ -29,14 +29,14 @@ class CustomBottomNavBarItem extends StatelessWidget {
               icon,
               size: 30.0,
               color:
-                  isSelected ? PicPayColors.PICPAY_PRIMARY_GREEN : Colors.grey,
+                  isSelected ? PicPayColors.picpayPrimaryGreen : Colors.grey,
             ),
             Text(
               text,
               style: TextStyles.smallDefaultText.copyWith(
                 color: isSelected
-                    ? PicPayColors.PICPAY_PRIMARY_GREEN
-                    : PicPayColors.PICPAY_GREY_FONT,
+                    ? PicPayColors.picpayPrimaryGreen
+                    : PicPayColors.picpayGreyFont,
               ),
             )
           ],

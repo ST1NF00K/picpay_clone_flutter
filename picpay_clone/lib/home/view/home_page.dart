@@ -15,11 +15,11 @@ class HomePage extends StatelessWidget {
         children: [
           const HomeHeaderWidget(),
           Container(
-            color: PicPayColors.PICPAY_PRIMARY_GREEN,
+            color: PicPayColors.picpayPrimaryGreen,
             child: Container(
                 width: MediaQuery.of(context).size.width,
                 decoration: const BoxDecoration(
-                  color: PicPayColors.PICPAY_WHITE_FONT,
+                  color: PicPayColors.picpayWhite,
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(25.0),
                       topLeft: Radius.circular(25.0)),
@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
                 child: Column(
                   children: const [
                     HomeSearchBarWidget(),
-                    
+
                   ],
                 )),
           ),
