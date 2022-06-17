@@ -13,7 +13,7 @@ class HomeSearchBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(left: 8.0),
-      margin: const EdgeInsets.all(22.0),
+      margin: const EdgeInsets.only(top: 22, left: 18, right: 18, bottom: 25),
       width: 1.sw,
       height: 50.h,
       decoration: BoxDecoration(

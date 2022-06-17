@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/home/view/components/header/cards/home_header_horizontal_list_widget.dart';
 import 'package:picpay_clone/home/view/components/header/profile_row/balance_and_extract_widget.dart';
 import 'package:picpay_clone/home/view/components/header/profile_row/home_profile_row_widget.dart';

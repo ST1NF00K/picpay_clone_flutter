@@ -25,6 +25,17 @@ class TextStyles {
 
   static TextStyle get hintTextStyle => const TextStyle(
         color: PicPayColors.picpayGreyFont,
+        fontSize: 17,
+      );
+
+  static TextStyle get titleText => const TextStyle(
+        color: PicPayColors.picpayBlack,
         fontSize: 18,
+        fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle get smallLabel => const TextStyle(
+        color: PicPayColors.picpayBlack,
+        fontSize: 13,
       );
 }

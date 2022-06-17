@@ -16,4 +16,6 @@ class PicPayColors {
   static const picpayGreyFont = Color.fromRGBO(80, 91, 97, 1);
 
   static const picpayLightGrey = Color.fromRGBO(245, 245, 245, 1);
+
+  static const picpayBlack = Color.fromRGBO(32, 32, 32, 1);
 }

@@ -3,23 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/home/view/components/header/cards/card_items.dart';
 import 'package:picpay_clone/home/view/components/header/cards/green_home_card_widget.dart';
 
-class HomeHeaderHorizontalListWidget extends StatefulWidget {
-  const HomeHeaderHorizontalListWidget({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  State<HomeHeaderHorizontalListWidget> createState() => _HomeHeaderHorizontalListWidgetState();
-}
-
-class _HomeHeaderHorizontalListWidgetState extends State<HomeHeaderHorizontalListWidget> {
-  List<Map<String, dynamic>> items = [];
-
-  @override
-  void initState() {
-    items = cardItensList;
-    super.initState();
-  }
+class HomeHeaderHorizontalListWidget extends StatelessWidget {
+  const HomeHeaderHorizontalListWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +15,8 @@ class _HomeHeaderHorizontalListWidgetState extends State<HomeHeaderHorizontalLis
         scrollDirection: Axis.horizontal,
         itemBuilder: (BuildContext context, int index) {
           return GreenHomeCardWidget(
-            title: items[index]["title"],
-            icon: items[index]["icon"],
+            title: cardItensList[index]["title"],
+            icon: cardItensList[index]["icon"],
           );
         },
         separatorBuilder: (BuildContext context, int index) {
@@ -39,7 +24,7 @@ class _HomeHeaderHorizontalListWidgetState extends State<HomeHeaderHorizontalLis
             width: 1.0,
           );
         },
-        itemCount: items.length,
+        itemCount: cardItensList.length,
       ),
     );
   }
