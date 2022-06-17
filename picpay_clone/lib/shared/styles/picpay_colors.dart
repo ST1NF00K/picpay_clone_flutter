@@ -15,4 +15,7 @@ static const PICPAY_WHITE_FONT = Colors.white;
 
 static const PICPAY_GREY_FONT = Color.fromRGBO(80, 91, 97, 1);
 
+static const PICPAY_LIGHT_GREY = Color.fromRGBO(245, 245, 245, 1);
+
+
 }

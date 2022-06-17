@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:picpay_clone/home/view/components/header/home_header_widget.dart';
+import 'package:picpay_clone/home/view/components/home_search_bar_widget.dart';
 import 'package:picpay_clone/home/view/components/nav_bar/custom_bottom_nav_bar_widget.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 
@@ -23,10 +24,16 @@ class HomePage extends StatelessWidget {
                       topRight: Radius.circular(25.0),
                       topLeft: Radius.circular(25.0)),
                 ),
-                child: Center(child: Text("Teste"))),
+                child: Column(
+                  children: const [
+                    HomeSearchBarWidget(),
+                    
+                  ],
+                )),
           ),
         ],
       ),
     );
   }
 }
+

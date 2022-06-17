@@ -22,4 +22,9 @@ class TextStyles {
   static TextStyle get smallDefaultText => defaultText.copyWith(
         fontSize: 11.sp,
       );
+
+  static TextStyle get hintTextStyle => const TextStyle(
+        color: PicPayColors.PICPAY_GREY_FONT,
+        fontSize: 18,
+      );
 }
