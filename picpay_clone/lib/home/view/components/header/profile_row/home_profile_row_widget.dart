@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 import 'package:picpay_clone/shared/styles/text_styles.dart';
@@ -28,7 +29,7 @@ class HomeProfileRowWidget extends StatelessWidget {
       child: IconButton(
           onPressed: () {},
           icon: const Icon(
-            Icons.chat_outlined,
+            CupertinoIcons.chat_bubble_2,
             color: PicPayColors.picpayWhite,
             size: 30.0,
           )),

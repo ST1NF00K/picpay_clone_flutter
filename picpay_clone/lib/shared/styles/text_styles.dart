@@ -38,4 +38,13 @@ class TextStyles {
         color: PicPayColors.picpayBlack,
         fontSize: 13,
       );
+
+  static TextStyle get tabLabel => const TextStyle(
+        fontSize: 15,
+        fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle get boldGreyText => tabLabel.copyWith(
+        color: PicPayColors.picpayGreyFont,
+      );
 }
