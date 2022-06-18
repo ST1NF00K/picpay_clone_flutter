@@ -12,13 +12,12 @@ class HomePage extends StatelessWidget {
       bottomNavigationBar: const CustonBottomNavBar(),
       body: SingleChildScrollView(
         child: Column(
-          children: const [
-             HomeHeaderWidget(),
-             HomeContentWidget(),
+          children: const[
+            HomeHeaderWidget(),
+            HomeContentWidget(),
           ],
         ),
       ),
     );
   }
 }
-

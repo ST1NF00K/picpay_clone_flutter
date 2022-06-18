@@ -23,7 +23,7 @@ class ActivitiesTabBarWidget extends StatelessWidget {
             width: 200,
             child: TabBar(
                 labelColor: PicPayColors.picpayLightGreen,
-                unselectedLabelColor: Colors.grey[500],
+                unselectedLabelColor: PicPayColors.picpayMediumLight500Grey,
                 indicatorColor: PicPayColors.picpayLightGreen,
                 labelStyle: TextStyles.tabLabel,
                 tabs: const [

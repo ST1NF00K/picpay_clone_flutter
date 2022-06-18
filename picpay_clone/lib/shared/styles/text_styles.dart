@@ -28,6 +28,11 @@ class TextStyles {
         fontSize: 17,
       );
 
+  static TextStyle get homeCardActionText => const TextStyle(
+        color: Colors.black87,
+        fontSize: 15,
+      );
+
   static TextStyle get titleText => const TextStyle(
         color: PicPayColors.picpayBlack,
         fontSize: 18,
@@ -46,5 +51,16 @@ class TextStyles {
 
   static TextStyle get boldGreyText => tabLabel.copyWith(
         color: PicPayColors.picpayGreyFont,
+      );
+
+  static TextStyle get positiveMoneyValue => const TextStyle(
+        color: PicPayColors.picpayLightGreen,
+        fontSize: 13.5,
+        fontWeight: FontWeight.w500,
+      );
+
+  static TextStyle get smallLightGreyLabel => const TextStyle(
+        color: PicPayColors.picpayMediumLight400Grey,
+        fontSize: 13,
       );
 }
