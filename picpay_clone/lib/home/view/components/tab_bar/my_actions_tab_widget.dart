@@ -8,30 +8,38 @@ class MyActionsTabWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-          scrollDirection: Axis.vertical,
-          physics: const NeverScrollableScrollPhysics(),
-          itemCount: 10,
-          shrinkWrap: true,
-          separatorBuilder: ((context, index) => Container(
-                height: 10.0,
-                color: PicPayColors.picpayLightGrey,
-              )),
-          itemBuilder: (context, index) {
-            return HomeEventCard(
-              image: const NetworkImage(
-                  'https://logospng.org/download/pix/logo-pix-icone-512.png'),
-              actionText: _buildActionText(),
-              value: 'R\$ 100,00',
-              isNegative: false,
-              dateAgo: '1 semana atrás',
-              commentsNumber: 0,
-              likesNumber: 0,
-            );
-          });
+    return Column(
+      children: [
+        ListView.separated(
+            scrollDirection: Axis.vertical,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: 10,
+            shrinkWrap: true,
+            separatorBuilder: ((context, index) => Container(
+                  height: 10.0,
+                  color: PicPayColors.picpayLightGrey,
+                )),
+            itemBuilder: (context, index) {
+              return HomeEventCard(
+                image: const NetworkImage(
+                    'https://logospng.org/download/pix/logo-pix-icone-512.png'),
+                actionText: _buildActionText(),
+                value: 'R\$ 100,00',
+                isNegative: false,
+                dateAgo: '1 semana atrás',
+                commentsNumber: 0,
+                likesNumber: 0,
+              );
+            }),
+        Container(
+          height: 10.0,
+          color: PicPayColors.picpayLightGrey,
+        ),
+      ],
+    );
   }
 
-    Text _buildActionText() {
+  Text _buildActionText() {
     return Text.rich(
       TextSpan(children: [
         TextSpan(

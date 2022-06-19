@@ -12,9 +12,9 @@ class ActivitiesTabBarViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IndexedStack(
-      children: [
-        const MyActionsTabWidget(),
-        Container(),
+      children: const [
+         MyActionsTabWidget(),
+         MyActionsTabWidget(),
       ],
     );
   }
