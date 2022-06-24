@@ -5,6 +5,7 @@ import 'package:picpay_clone/home/view/components/tab_bar/all_activities/info_li
 import 'package:picpay_clone/home/view/components/tab_bar/all_activities/rectangle_icon_widget.dart';
 import 'package:picpay_clone/home/view/components/tab_bar/my_actions_tab_widget.dart';
 import 'package:picpay_clone/home/view/components/tab_bar/shared/grey_divider.dart';
+import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 import 'package:picpay_clone/shared/styles/text/description_styles.dart';
 
 class AllActivitiesTabWidget extends StatelessWidget {
@@ -74,8 +75,10 @@ class AllActivitiesTabWidget extends StatelessWidget {
                 ],
               ),
               icon: Container(
+                height: 57.0,
+                width: 57.0,
                 decoration: BoxDecoration(
-                  color: Colors.red,
+                  color: PicPayColors.picpayLightGreen,
                   borderRadius: BorderRadius.circular(40),
                   image: const DecorationImage(
                       fit: BoxFit.cover,
