@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
-import 'package:picpay_clone/shared/styles/text_styles.dart';
+import 'package:picpay_clone/shared/styles/text/header_styles.dart';
+import 'package:picpay_clone/shared/styles/text/title_styles.dart';
 
 class BalanceAndExtractWidget extends StatelessWidget {
   const BalanceAndExtractWidget({
@@ -18,7 +19,7 @@ class BalanceAndExtractWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text("Saldo PicPay",
-                  style: TextStyles.defaultText.copyWith(
+                  style: defaultHeaderText.copyWith(
                     fontSize: 17.sp,
                   )),
               _balanceWidget()
@@ -40,7 +41,7 @@ class BalanceAndExtractWidget extends StatelessWidget {
       onPressed: () {},
       child: Text(
         "Extrato",
-        style: TextStyles.defaultText,
+        style: defaultHeaderText,
       ),
     );
   }
@@ -51,11 +52,11 @@ class BalanceAndExtractWidget extends StatelessWidget {
       children: [
         Text(
           "R\$  ",
-          style: TextStyles.bigSemiBoldText,
+          style: bigSemiBoldText.copyWith(color: PicPayColors.picpayWhite),
         ),
         Text(
           "2.300,85",
-          style: TextStyles.bigSemiBoldText,
+          style: bigSemiBoldText.copyWith(color: PicPayColors.picpayWhite),
         ),
         Padding(
           padding: const EdgeInsets.only(left: 8.0),

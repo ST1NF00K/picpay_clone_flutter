@@ -5,7 +5,7 @@ import 'package:picpay_clone/home/view/components/content/suggestion_list_items.
 import 'package:picpay_clone/home/view/components/tab_bar/activities_tab_bar_view_widget.dart';
 import 'package:picpay_clone/home/view/components/tab_bar/activities_tab_bar_widget.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
-import 'package:picpay_clone/shared/styles/text_styles.dart';
+import 'package:picpay_clone/shared/styles/text/title_styles.dart';
 
 class HomeContentWidget extends StatelessWidget {
   const HomeContentWidget({Key? key}) : super(key: key);
@@ -33,7 +33,7 @@ class HomeContentWidget extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 16.0, bottom: 5.0),
                   child: Text(
                     "Sugestões para você",
-                    style: TextStyles.titleText,
+                    style: mediumTitleText,
                   ),
                 ),
                 _suggestionsForYouList(),

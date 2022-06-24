@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
-import 'package:picpay_clone/shared/styles/text_styles.dart';
+import 'package:picpay_clone/shared/styles/text/label_styles.dart';
 
 class HomeSearchBarWidget extends StatelessWidget {
   const HomeSearchBarWidget({
@@ -30,7 +30,7 @@ class HomeSearchBarWidget extends StatelessWidget {
               size: 30.sp,
             ),
             hintText: ' O que você quer encontrar?',
-            hintStyle: TextStyles.hintTextStyle,
+            hintStyle: hintTextStyle,
             border: InputBorder.none,
           ),
         ),

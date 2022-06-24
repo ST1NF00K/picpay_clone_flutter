@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:picpay_clone/shared/styles/text_styles.dart';
+import 'package:picpay_clone/shared/styles/text/label_styles.dart';
 
 class HomeSugestionListItemWidget extends StatelessWidget {
   const HomeSugestionListItemWidget({
@@ -24,7 +24,7 @@ class HomeSugestionListItemWidget extends StatelessWidget {
         ),
         Text(
           label,
-          style: TextStyles.smallLabel,
+          style: smallLabel,
         ),
       ],
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
-import 'package:picpay_clone/shared/styles/text_styles.dart';
+import 'package:picpay_clone/shared/styles/text/description_styles.dart';
+import 'package:picpay_clone/shared/styles/text/label_styles.dart';
 
 class HomeEventCard extends StatelessWidget {
   const HomeEventCard({
@@ -51,8 +52,8 @@ class HomeEventCard extends StatelessWidget {
               Text(
                 value,
                 style: !isNegative
-                    ? TextStyles.positiveMoneyValue
-                    : TextStyles.positiveMoneyValue.copyWith(color: Colors.red),
+                    ? positiveMoneyValue
+                    : positiveMoneyValue.copyWith(color: Colors.red),
               ),
               _verticalDivider(),
               const Icon(
@@ -62,7 +63,7 @@ class HomeEventCard extends StatelessWidget {
               ),
               Text(
                 dateAgo,
-                style: TextStyles.smallLightGreyLabel,
+                style: smallLightGreyLabel,
               ),
               const Spacer(),
               _iconWithTextRow(Icons.chat_bubble_outline, commentsNumber),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
-import 'package:picpay_clone/shared/styles/text_styles.dart';
+import 'package:picpay_clone/shared/styles/text/header_styles.dart';
 
 class GreenHomeCardWidget extends StatelessWidget {
   const GreenHomeCardWidget({
@@ -33,7 +33,7 @@ class GreenHomeCardWidget extends StatelessWidget {
               ),
               Text(
                 " $title",
-                style: TextStyles.defaultTextBold.copyWith(
+                style: defaultHeaderTextBold.copyWith(
                   fontSize: 14.sp,
                 ),
               ),

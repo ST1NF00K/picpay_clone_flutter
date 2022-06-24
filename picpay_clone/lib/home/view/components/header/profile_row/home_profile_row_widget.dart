@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
-import 'package:picpay_clone/shared/styles/text_styles.dart';
+import 'package:picpay_clone/shared/styles/text/header_styles.dart';
 
 class HomeProfileRowWidget extends StatelessWidget {
   const HomeProfileRowWidget({
@@ -69,8 +69,8 @@ class HomeProfileRowWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Olá,", style: TextStyles.defaultText.copyWith(height: 1.5)),
-        Text("@fluttershy", style: TextStyles.defaultTextExtraBold),
+        Text("Olá,", style: defaultHeaderText.copyWith(height: 1.5)),
+        Text("@fluttershy", style: defaultHeaderTextExtraBold),
       ],
     );
   }

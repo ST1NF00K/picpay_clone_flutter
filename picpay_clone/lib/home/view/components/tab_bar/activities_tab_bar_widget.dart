@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
-import 'package:picpay_clone/shared/styles/text_styles.dart';
+import 'package:picpay_clone/shared/styles/text/label_styles.dart';
 
 class ActivitiesTabBarWidget extends StatelessWidget {
   const ActivitiesTabBarWidget({
@@ -15,7 +15,7 @@ class ActivitiesTabBarWidget extends StatelessWidget {
         children: [
           Text(
             "Atividades",
-            style: TextStyles.boldGreyText,
+            style: boldGreyText,
           ),
           const Spacer(),
            SizedBox(
@@ -25,7 +25,7 @@ class ActivitiesTabBarWidget extends StatelessWidget {
                 labelColor: PicPayColors.picpayLightGreen,
                 unselectedLabelColor: PicPayColors.picpayMediumLight500Grey,
                 indicatorColor: PicPayColors.picpayLightGreen,
-                labelStyle: TextStyles.tabLabel,
+                labelStyle: tabLabel,
                 tabs: const [
                   Tab(
                     text: "Todos",
