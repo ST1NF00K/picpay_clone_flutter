@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:picpay_clone/home/view/components/tab_bar/all_activities_tab_widget.dart';
+import 'package:picpay_clone/home/view/components/tab_bar/all_activities/all_activities_tab_widget.dart';
 import 'package:picpay_clone/home/view/components/tab_bar/my_actions_tab_widget.dart';
 
 class ActivitiesTabBarViewWidget extends StatelessWidget {

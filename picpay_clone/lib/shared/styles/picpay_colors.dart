@@ -22,4 +22,6 @@ class PicPayColors {
   static const picpayMediumLight500Grey = Color.fromRGBO(178, 179, 183, 1);
 
   static const picpayBlack = Color.fromRGBO(32, 32, 32, 1);
+
+  static const picPayMediumBlack = Colors.black87;
 }

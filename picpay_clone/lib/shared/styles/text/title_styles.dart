@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 
 TextStyle get mediumTitleText => TextStyle(
-      color: PicPayColors.picpayBlack,
+      color: PicPayColors.picPayMediumBlack,
       fontSize: 18.sp,
       fontWeight: FontWeight.bold,
     );
@@ -14,5 +14,5 @@ TextStyle get bigSemiBoldText => TextStyle(
     );
 
 TextStyle get bigTitleText => mediumTitleText.copyWith(
-      fontSize: 24.sp,
+      fontSize: 22.sp,
     );
