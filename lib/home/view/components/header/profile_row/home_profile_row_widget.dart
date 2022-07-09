@@ -46,8 +46,8 @@ class HomeProfileRowWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             const CircleAvatar(
-              backgroundImage: NetworkImage(
-                "https://secure.gravatar.com/avatar/c9459ebea7a219653b6d0d5997075b4d?s=256&d=mm&r=g",
+              backgroundImage: AssetImage(
+                "assets/default-avatar.png",
               ),
             ),
             const SizedBox(width: 12.0),

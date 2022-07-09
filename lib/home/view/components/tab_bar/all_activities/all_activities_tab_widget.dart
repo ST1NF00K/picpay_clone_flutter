@@ -39,8 +39,8 @@ class AllActivitiesTabWidget extends StatelessWidget {
               style: semiBoldMediumText.copyWith(fontSize: 16.5),
             ),
             icon: RectangleIconWidget(
-              image: Image.network(
-                'https://cdn-icons-png.flaticon.com/512/1581/1581891.png',
+              image: Image.asset(
+                'assets/drive-icon.png',
               ),
             ),
           );
@@ -82,8 +82,7 @@ class AllActivitiesTabWidget extends StatelessWidget {
                   borderRadius: BorderRadius.circular(40),
                   image: const DecorationImage(
                       fit: BoxFit.cover,
-                      image: NetworkImage(
-                          'https://cdn-icons-png.flaticon.com/512/38/38653.png')),
+                      image: AssetImage('assets/holding-phone-icon.png')),
                 ),
               ));
         },

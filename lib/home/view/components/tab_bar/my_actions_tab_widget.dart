@@ -19,8 +19,7 @@ class MyActionsTabWidget extends StatelessWidget {
             separatorBuilder: ((context, index) => const GreyDivider()),
             itemBuilder: (context, index) {
               return HomeEventCard(
-                image: const NetworkImage(
-                    'https://logospng.org/download/pix/logo-pix-icone-512.png'),
+                image: const AssetImage('assets/pix-icon.png'),
                 actionText: _buildActionText(),
                 value: 'R\$ 100,00',
                 isNegative: false,
