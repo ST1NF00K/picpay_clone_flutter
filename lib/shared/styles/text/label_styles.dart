@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 
 TextStyle get smallLabel => const TextStyle(
-      color: PicPayColors.picpayBlack,
-      fontSize: 13,
+      color: PicPayColors.picPayMediumBlack,
+      fontSize: 14,
     );
 
 TextStyle get tabLabel => const TextStyle(

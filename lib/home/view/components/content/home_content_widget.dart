@@ -6,6 +6,8 @@ import 'package:picpay_clone/home/view/components/tab_bar/activities_tab_bar_wid
 import 'package:picpay_clone/home/view/components/tab_bar/all_activities/all_activities_tab_widget.dart';
 import 'package:picpay_clone/home/view/components/tab_bar/my_actions_tab_widget.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
+import 'package:picpay_clone/shared/styles/text/label_styles.dart';
+import 'package:picpay_clone/shared/styles/text/title_styles.dart';
 
 class HomeContentWidget extends StatefulWidget {
   const HomeContentWidget({Key? key}) : super(key: key);
@@ -93,15 +95,14 @@ class _HomeContentWidgetState extends State<HomeContentWidget>
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
                     'Seleção especial',
+                    style: smallLabel.copyWith(fontSize: 15),
                   ),
                   Text('Promoções disponíveis',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w800,
-                        fontSize: 17,
-                        color: PicPayColors.picpayBlack,
+                      style: mediumTitleText.copyWith(
+                        fontWeight: FontWeight.w900,
                       )),
                 ],
               ),
