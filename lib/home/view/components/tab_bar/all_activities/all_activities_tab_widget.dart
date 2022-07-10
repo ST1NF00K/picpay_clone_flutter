@@ -28,7 +28,7 @@ class AllActivitiesTabWidget extends StatelessWidget {
   Widget _buildListWidget1() {
     return InfoColumnWidget(
       title: 'Pague suas contas pelo PicPay',
-      description: 'Parcele em até 12x com qualquer cartão de\ncrédito',
+      description: 'Parcele em até 12x com qualquer cartão de crédito',
       list: InfoListAbstraction(
         height: 160,
         itemCount: 5,
@@ -52,7 +52,7 @@ class AllActivitiesTabWidget extends StatelessWidget {
   Widget _buildListWidget2() {
     return InfoColumnWidget(
       title: 'Compre recargas e Gift Cards',
-      description: 'Para alimentação, jogos, entretenimento e\nmais!',
+      description: 'Para alimentação, jogos, entretenimento e mais!',
       list: InfoListAbstraction(
         height: 200,
         itemCount: 5,

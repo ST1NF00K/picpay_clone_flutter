@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:picpay_clone/home/view/components/content/home_event_card.dart';
 import 'package:picpay_clone/shared/components/grey_divider.dart';
-import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 import 'package:picpay_clone/shared/styles/text/description_styles.dart';
 
 class MyActionsTabWidget extends StatelessWidget {
@@ -28,10 +27,7 @@ class MyActionsTabWidget extends StatelessWidget {
                 likesNumber: 0,
               );
             }),
-        Container(
-          height: 10.0,
-          color: PicPayColors.picpayLightGrey,
-        ),
+        const GreyDivider()
       ],
     );
   }

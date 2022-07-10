@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 import 'package:picpay_clone/shared/styles/text/description_styles.dart';
 import 'package:picpay_clone/shared/styles/text/label_styles.dart';
@@ -28,9 +29,9 @@ class HomeEventCard extends StatelessWidget {
     return Container(
       height: 150,
       color: PicPayColors.picpayWhite,
-      padding: const EdgeInsets.only(
-        left: 25.0,
-        right: 25,
+      padding: EdgeInsets.only(
+        left: 25.0.sp,
+        right: 25.sp,
         top: 30.0,
         bottom: 8.0,
       ),
@@ -44,8 +45,8 @@ class HomeEventCard extends StatelessWidget {
               actionText,
             ],
           ),
-          const SizedBox(
-            height: 22.0,
+           SizedBox(
+            height: 22.0.sp,
           ),
           Row(
             children: [
@@ -56,10 +57,10 @@ class HomeEventCard extends StatelessWidget {
                     : positiveMoneyValue.copyWith(color: Colors.red),
               ),
               _verticalDivider(),
-              const Icon(
+               Icon(
                 Icons.lock_outline,
                 color: PicPayColors.picpayMediumLight400Grey,
-                size: 22,
+                size: 22.sp,
               ),
               Text(
                 dateAgo,
@@ -67,8 +68,8 @@ class HomeEventCard extends StatelessWidget {
               ),
               const Spacer(),
               _iconWithTextRow(Icons.chat_bubble_outline, commentsNumber),
-              const SizedBox(
-                width: 20.0,
+               SizedBox(
+                width: 20.0.sp,
               ),
               _iconWithTextRow(Icons.favorite_border_outlined, likesNumber),
             ],
@@ -78,7 +79,7 @@ class HomeEventCard extends StatelessWidget {
     );
   }
 
-  Container _verticalDivider() {
+  Widget _verticalDivider() {
     return Container(
       color: PicPayColors.picpayMediumLight400Grey,
       height: 13.0,
@@ -87,12 +88,12 @@ class HomeEventCard extends StatelessWidget {
     );
   }
 
-  Padding _buildImage() {
+  Widget _buildImage() {
     return Padding(
-      padding: const EdgeInsets.only(left: 5, right: 10.0),
+      padding: EdgeInsets.only(left: 5.sp, right: 10.0.sp),
       child: Container(
-        width: 45.0,
-        height: 45.0,
+        width: 45.0.sp,
+        height: 45.0.sp,
         decoration: BoxDecoration(
           color: PicPayColors.picpayWhite,
           image: DecorationImage(
@@ -110,21 +111,23 @@ class HomeEventCard extends StatelessWidget {
   }
 
   Widget _iconWithTextRow(IconData icon, int numberLabel) {
-    return Row(children: [
-      Icon(
-        icon,
-        color: PicPayColors.picpayMediumLight500Grey,
-        size: 24,
-      ),
-      Padding(
-        padding: const EdgeInsets.only(left: 5.0),
-        child: Text(
-          "$numberLabel",
-          style: const TextStyle(
-            color: PicPayColors.picpayMediumLight500Grey,
+    return FittedBox(
+      child: Row(children: [
+        Icon(
+          icon,
+          color: PicPayColors.picpayMediumLight500Grey,
+          size: 24.sp,
+        ),
+        Padding(
+          padding: EdgeInsets.only(left: 5.0.sp),
+          child: Text(
+            "$numberLabel",
+            style: const TextStyle(
+              color: PicPayColors.picpayMediumLight500Grey,
+            ),
           ),
         ),
-      ),
-    ]);
+      ]),
+    );
   }
 }

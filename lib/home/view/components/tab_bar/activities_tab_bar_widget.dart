@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 import 'package:picpay_clone/shared/styles/text/label_styles.dart';
 
@@ -25,7 +26,7 @@ class ActivitiesTabBarWidget extends StatelessWidget {
           const Spacer(),
           SizedBox(
             height: 40,
-            width: 200,
+            width: 200.sp,
             child: TabBar(
                 onTap: onTap,
                 controller: controller,
