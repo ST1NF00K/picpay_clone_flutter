@@ -1,16 +1,17 @@
-# picpay_clone
+## PicPay clone
 
-A new Flutter project.
+App made in Flutter which is componentized and has a organized styling structure.
 
-## Getting Started
+<br/>
 
-This project is a starting point for a Flutter application.
+<hr/>
 
-A few resources to get you started if this is your first Flutter project:
+<img src="https://user-images.githubusercontent.com/33629714/178161492-45330d03-7717-43af-9745-63628803519d.jpeg" alt="drawing" width="250" height="520"/>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<br/>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://user-images.githubusercontent.com/33629714/178161490-67e73549-cff6-408c-829d-7e22c9693055.jpeg" alt="drawing" width="250" height="520"/>
+
+<br/>
+
+![WhatsApp Video 2022-07-10 at 17 42 23](https://user-images.githubusercontent.com/33629714/178161849-ab471353-797a-4830-b8c0-31fee3c88933.gif)
