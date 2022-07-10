@@ -2,13 +2,28 @@ import 'package:flutter/material.dart';
 import 'package:picpay_clone/home/view/components/content/home_search_bar_widget.dart';
 import 'package:picpay_clone/home/view/components/content/home_suggestion_list_item_widget.dart';
 import 'package:picpay_clone/home/view/components/content/suggestion_list_items.dart';
-import 'package:picpay_clone/home/view/components/tab_bar/activities_tab_bar_view_widget.dart';
 import 'package:picpay_clone/home/view/components/tab_bar/activities_tab_bar_widget.dart';
+import 'package:picpay_clone/home/view/components/tab_bar/all_activities/all_activities_tab_widget.dart';
+import 'package:picpay_clone/home/view/components/tab_bar/my_actions_tab_widget.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
-import 'package:picpay_clone/shared/styles/text/title_styles.dart';
 
-class HomeContentWidget extends StatelessWidget {
+class HomeContentWidget extends StatefulWidget {
   const HomeContentWidget({Key? key}) : super(key: key);
+
+  @override
+  State<HomeContentWidget> createState() => _HomeContentWidgetState();
+}
+
+class _HomeContentWidgetState extends State<HomeContentWidget>
+    with TickerProviderStateMixin {
+  late final TabController _tabController;
+
+  @override
+  void initState() {
+    _tabController = TabController(length: 2, vsync: this);
+
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,33 +37,88 @@ class HomeContentWidget extends StatelessWidget {
                 topRight: Radius.circular(25.0),
                 topLeft: Radius.circular(25.0)),
           ),
-          child: DefaultTabController(
-            length: 2,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const HomeSearchBarWidget(),
-                Padding(
-                  padding: const EdgeInsets.only(left: 16.0, bottom: 5.0),
-                  child: Text(
-                    "Sugestões para você",
-                    style: mediumTitleText,
-                  ),
-                ),
-                _suggestionsForYouList(),
-                const SizedBox(
-                  height: 20.0,
-                ),
-                const ActivitiesTabBarWidget(),
-                const ActivitiesTabBarViewWidget()
-              ],
-            ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const HomeSearchBarWidget(),
+              _suggestionsForYouList(),
+              _specialSelectionCard(),
+              const SizedBox(
+                height: 20,
+              ),
+              _activitiesTabBar(),
+            ],
           )),
     );
   }
 
-  SizedBox _suggestionsForYouList() {
+  Widget _activitiesTabBar() {
+    return Column(children: [
+      ActivitiesTabBarWidget(
+        controller: _tabController,
+        onTap: (value) => setState(() {
+          _tabController.index = value;
+        }),
+      ),
+      Builder(builder: (_) {
+        if (_tabController.index == 0) {
+          return const AllActivitiesTabWidget();
+        } else if (_tabController.index == 1) {
+          return const MyActionsTabWidget();
+        } else {
+          return Container();
+        }
+      }),
+    ]);
+  }
+
+  Widget _specialSelectionCard() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      child: Card(
+        elevation: 2.5,
+        color: PicPayColors.picpayWhite,
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Row(
+            children: [
+              const Icon(
+                Icons.local_offer_outlined,
+                size: 30.0,
+                color: PicPayColors.picpayLightGreen,
+              ),
+              const SizedBox(
+                width: 8,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Text(
+                    'Seleção especial',
+                  ),
+                  Text('Promoções disponíveis',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 17,
+                        color: PicPayColors.picpayBlack,
+                      )),
+                ],
+              ),
+              const Spacer(),
+              const Icon(
+                Icons.arrow_forward_ios,
+                size: 16.0,
+                color: PicPayColors.picpayLightGreen,
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _suggestionsForYouList() {
     return SizedBox(
       height: 130.0,
       child: ListView.separated(
@@ -65,4 +135,3 @@ class HomeContentWidget extends StatelessWidget {
     );
   }
 }
-

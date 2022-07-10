@@ -5,7 +5,12 @@ import 'package:picpay_clone/shared/styles/text/label_styles.dart';
 class ActivitiesTabBarWidget extends StatelessWidget {
   const ActivitiesTabBarWidget({
     Key? key,
+    required this.controller,
+    this.onTap,
   }) : super(key: key);
+
+  final TabController controller;
+  final Function(int)? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +23,12 @@ class ActivitiesTabBarWidget extends StatelessWidget {
             style: boldGreyText,
           ),
           const Spacer(),
-           SizedBox(
+          SizedBox(
             height: 40,
             width: 200,
             child: TabBar(
+                onTap: onTap,
+                controller: controller,
                 labelColor: PicPayColors.picpayLightGreen,
                 unselectedLabelColor: PicPayColors.picpayMediumLight500Grey,
                 indicatorColor: PicPayColors.picpayLightGreen,

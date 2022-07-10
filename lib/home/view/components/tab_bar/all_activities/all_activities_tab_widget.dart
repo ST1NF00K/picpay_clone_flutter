@@ -4,7 +4,7 @@ import 'package:picpay_clone/home/view/components/tab_bar/all_activities/info_li
 import 'package:picpay_clone/home/view/components/tab_bar/all_activities/info_list_item_widget.dart';
 import 'package:picpay_clone/home/view/components/tab_bar/all_activities/rectangle_icon_widget.dart';
 import 'package:picpay_clone/home/view/components/tab_bar/my_actions_tab_widget.dart';
-import 'package:picpay_clone/home/view/components/tab_bar/shared/grey_divider.dart';
+import 'package:picpay_clone/shared/components/grey_divider.dart';
 import 'package:picpay_clone/shared/styles/picpay_colors.dart';
 import 'package:picpay_clone/shared/styles/text/description_styles.dart';
 
